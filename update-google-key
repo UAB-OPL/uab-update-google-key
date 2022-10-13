@@ -1,0 +1,5 @@
+#!/bin/bash
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub \
+    | gpg --dearmor -  \
+    | sudo tee /etc/apt/trusted.gpg.d/google-linux-key.gpg >/dev/null
+chmod 0644 /etc/apt/trusted.gpg.d/google-linux-key.gpg

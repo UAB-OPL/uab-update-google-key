@@ -1,0 +1,12 @@
+Source: uab-update-google-key
+Section: misc
+Priority: optional
+Maintainer: Jordi Román Mejias <Jordi.Roman@uab.cat>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+
+Package: uab-update-google-key
+Architecture: all
+Depends: ${misc:Depends}, wget, gpg
+Description: Update the deb key for Google packages
+ This package update the deb key for Google packages (Chrome).
